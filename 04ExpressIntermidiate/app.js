@@ -7,7 +7,7 @@ var myconsolelog = function(req,res,next){
 };
 
 app.get("/" , (req,res)=>{
-    res.send("Hello World!");
+    res.send("Hello World!"+res.resquestTime);
 });
 
 app.listen(3000, ()=> console.log("Server is running at port 3000...."));
