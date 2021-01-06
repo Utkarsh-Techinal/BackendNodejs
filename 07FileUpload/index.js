@@ -8,8 +8,9 @@ const port = process.env.PORT || 3000;
 
 
 //set-up for ejs
-
 app.set("view engine","ejs");
+// static folder
+
 app.get("/", (req,res)=>{
     res.send("Multer is going fine");
 });
